@@ -11,10 +11,11 @@ configure({ adapter: new Adapter() });
 
 export default function Header(props) {
     return (
-        <header>
-        <h1>Not Just Luck</h1>
-        <a href="#" id="js-signin-link" alt="Sign In">Sign In</a>
-        <a href="#" id="js-signout-link" alt="Sign Out">Sign Out</a>
-        </header>
+			    <div className="header-intro">
+			        <div className="header-text">
+			            <h1> Explore Your Options </h1>
+			            <p> by researching career opportunities and colleges</p>
+			        </div>
+			    </div>
     )
 }

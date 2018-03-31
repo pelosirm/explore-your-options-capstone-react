@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title> Explore Your Options</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Assistant:200,300,400" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <link rel="stylesheet" type="text/css" href="assets/grid.css">
+    <link rel="stylesheet" type="text/css" href="assets/main.css">
+</head>
+
+<body>
+<div id="reactHeader"></div>
+<!-- <header class="header-image">
+    <div class="header-intro">
+        <div class="header-text">
+            <h1> Explore Your Options </h1>
+            <p> by researching career opportunities and colleges</p>
+        </div>
+    </div>
+</header> -->
+<div id="reactNavigation"></div>
+<!--     <nav class="navigation navbar-fixed-top">
+        <ul>
+            <li class="left home">
+                <a href="#"><i class="fab fa-fly" aria-hidden="true"></i> Explore Your Options</a>
+            </li>
+        </ul>
+        <div class="sm-view">
+            <ul class="center-float">
+                <li class="right">
+                    <a href="#" class="nav-signout">signout</a>
+                </li>
+                <li class="right">
+                    <a href="#" class="nav-login">login</a>
+                </li>
+                <li class="right">
+                    <a href="#" class="nav-sign-up">sign up</a>
+                </li>
+                <li class="right">
+                    <a href="#" class="nav-saved">my saved info</a>
+                </li>
+                <li class="right">
+                    <a href="#" class="nav-search">search</a>
+                </li>
+            </ul>
+        </div>
+        <div class="error-message">
+            <span> Oops! Something went wrong</span>
+        </div>
+    </nav> -->
+<div id="reactHowItWorks"></div>
+    <!-- <section class="how-it-works">
+        <div class="how-it-works-title">
+            <h1>How it Works</h1>
+        </div>
+        <div class="row">
+            <div class="col-6 category career-img">
+            </div>
+            <div class="col-6 details red">
+                <p class="title-details"> search careers</p>
+                <p> search by career and location to return:</p>
+                <ul>
+                    <li>national median salary</li>
+                    <li>local median salary</li>
+                    <li>education required</li>
+                    <li>number of years of experience</li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6 category grad-img right">
+            </div>
+            <div class="col-6 details left gold">
+                <p class="title-details"> search colleges</p>
+                <p> search colleges by degree, speciality and location to return:</p>
+                <ul>
+                    <li> average cost</li>
+                    <li> average debt</li>
+                    <li> average salaray 10 years after graduation</li>
+                    <li> program and cost details </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6 category compare-img">
+            </div>
+            <div class="col-6 details">
+                <p class="title-details"> compare</p>
+                <p> compare colleges against desires career and calculate return on investment.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <button class="button sign-up-btn"> Sign Up</button>
+            </div>
+        </div>
+    </section> -->
+    <section class="sign-up">
+        <div class="login input-square returning-user">
+            <form class="form-returning-user">
+                <legend> Login </legend>
+                <p class='demo-user'> for demo username : 'demo' password : 'demo' </p>
+                <input type="text" name="username" placeholder="username" aria-required="true">
+                <input type="password" name="password" placeholder="password" aria-required="true">
+                <input type="submit" value="Submit">
+                <p> not a user? <a href="#" class="nav-sign-up">create a login</a></p>
+            </form>
+        </div>
+        <div class="login input-square create-new">
+            <form class="form-create-new">
+                <legend> Create New User </legend>
+                <input type="text" name="username" placeholder="username" aria-required="true">
+                <input type="password" name="password" placeholder="password" aria-required="true">
+                <input type="password" name="confirmPassword" placeholder="confirm password" aria-required="true">
+                <input type="submit" value="Submit">
+                <p> already a user? <a href="#" class="nav-login">login</a></p>
+            </form>
+        </div>
+    </section>
+    <section class="search-options">
+        <h1> Explore </h1>
+        <div class="row">
+            <div class="col-6 container search-careers">
+                <img src="assets/img/nasa.jpg" class="image">
+                <div class="middle">
+                    <div class="text">Search Careers</div>
+                </div>
+            </div>
+            <div class="col-6 search-careers-input">
+            </div>
+            <div class="col-6 container search-colleges">
+                <img src="assets/img/books.jpg" class="image" style="width:100%">
+                <div class="middle">
+                    <div class="text">Search Colleges</div>
+                </div>
+            </div>
+            <div class="col-6 search-colleges-input">
+            </div>
+    </section>
+    <section class="college-results">
+    </section>
+    <section class="college-more-detail">
+    </section>
+    <section class="career-results">
+    </section>
+    <section class="saved-options">
+    </section>
+    <section class="comparison">
+    </section>
+
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+            <div class="row career-column modal-fill">
+        </div>
+</div>
+</div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="assets/client.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+
+</body>
+
+</html>
