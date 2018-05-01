@@ -1,21 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-const render = ReactDOM.render;
-import {Provider} from 'react-redux';
+import { Provider } from 'react-redux';
+import store from './store'
 
-// import '../assets/css/main.css';
+import App from './App';
 
-import Header from '../js/components/header';
-import Navigation from '../js/components/nav';
-import HowItWorks from '../js/components/how-it-works';
-
-
-document.addEventListener('DOMContentLoaded', () =>
-                          {return ReactDOM.render(<Header />,
-                                                  document.getElementById('reactHeader'));} );
-document.addEventListener('DOMContentLoaded', () =>
-                          {return ReactDOM.render(<Navigation />,
-                                                  document.getElementById('reactNavigation'));} );
-document.addEventListener('DOMContentLoaded', () =>
-                          {return ReactDOM.render(<HowItWorks />,
-                                                  document.getElementById('reactHowItWorks'));} );
+ReactDOM.render(
+	<Provider store={store}>
+		<App />
+	</Provider> , document.getElementById('root'));

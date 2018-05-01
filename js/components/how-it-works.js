@@ -1,25 +1,17 @@
-import 'core-js/es6/map';
-import 'core-js/es6/set';
-
 import React from 'react';
-import ReactDOM from 'react-dom';
-
-import { configure } from 'enzyme';
-import Adapter from 'enzyme-adapter-react-16';
-
-configure({ adapter: new Adapter() });
+import { Link } from 'react-router-dom'
 
 export default function HowItWorks(props) {
     return (
-    <section class="how-it-works">
-        <div class="how-it-works-title">
+    <section className="how-it-works">
+        <div className="how-it-works-title">
             <h1>How it Works</h1>
         </div>
-        <div class="row">
-            <div class="col-6 category career-img">
+        <div className="row">
+            <div className="col-6 category career-img">
             </div>
-            <div class="col-6 details red">
-                <p class="title-details"> search careers</p>
+            <div className="col-6 details red">
+                <p className="title-details"> search careers</p>
                 <p> search by career and location to return:</p>
                 <ul>
                     <li>national median salary</li>
@@ -29,11 +21,11 @@ export default function HowItWorks(props) {
                 </ul>
             </div>
         </div>
-        <div class="row">
-            <div class="col-6 category grad-img right">
+        <div className="row">
+            <div className="col-6 category grad-img right">
             </div>
-            <div class="col-6 details left gold">
-                <p class="title-details"> search colleges</p>
+            <div className="col-6 details left gold">
+                <p className="title-details"> search colleges</p>
                 <p> search colleges by degree, speciality and location to return:</p>
                 <ul>
                     <li> average cost</li>
@@ -43,17 +35,17 @@ export default function HowItWorks(props) {
                 </ul>
             </div>
         </div>
-        <div class="row">
-            <div class="col-6 category compare-img">
+        <div className="row">
+            <div className="col-6 category compare-img">
             </div>
-            <div class="col-6 details">
-                <p class="title-details"> compare</p>
+            <div className="col-6 details">
+                <p className="title-details"> compare</p>
                 <p> compare colleges against desires career and calculate return on investment.</p>
             </div>
         </div>
-        <div class="row">
-            <div class="col-12">
-                <button class="button sign-up-btn"> Sign Up</button>
+        <div className="row">
+            <div className="col-12">
+                <button className="button sign-up-btn"><Link to="sign-up"> Sign Up</Link></button>
             </div>
         </div>
     </section>
