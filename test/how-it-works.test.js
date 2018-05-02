@@ -5,7 +5,7 @@ import Adapter from 'enzyme-adapter-react-16';
 
 Enzyme.configure({adapter: new Adapter()});
 
-import HowItWorks from '../js/components/how-it-works';
+import HowItWorks from '../js/components/how-it-works.js';
 
 describe('<HowItWorks />', () => {
     it('Renders without crashing', () => {
